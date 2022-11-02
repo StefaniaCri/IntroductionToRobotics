@@ -22,19 +22,22 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
     - no  sounds.   
     
  Duration:  indefinite,  changed  by pressing the button.
-  2. State 2 (initiated by counting down 8 seconds after a button press):
+ 
+ 2. State 2 (initiated by counting down 8 seconds after a button press):
    - yellow  for  cars;  
    - red  for  people;
    - no  sounds.
     
  Duration:  3 seconds.
-  3. State 3 (initiated after state 2 ends):  
+ 
+ 3. State 3 (initiated after state 2 ends):  
    - red for cars;
    - green for people
    - a beeping sound from the buzzer at a constant interval. 
    
  Duration: 8 seconds.
-  4. State 4 (initiated after state 3 ends):  
+ 
+ 4. State 4 (initiated after state 3 ends):  
   - red for cars;
   - blinking green for people;
   - a beeping sound from the buzzer,  at a constant interval,  faster than the beeping in state 3.  
