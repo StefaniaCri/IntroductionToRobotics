@@ -61,6 +61,9 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
   
     1.State  1 (default,  but  also  initiated  after  a  button  press  in  State2):  Current  position  blinking.   Can  use  the  joystick  to  move  from one  position  to  neighbors.   Short  pressing  the  button  toggles  state2.  Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
     2.State  2 (initiated  after  a  button  press  in  State  1):   The  current segment  stops  blinking,  adopting  the  state  of  the  segment  before selection (ON or OFF). Toggling the Y axis should change  the  segment  state  from  ON  to  OFF  or  from  OFF  to  ON. Clicking the joystick should save the segment state and exit back to state 1.
+  ## Posible moves: 
+   ![image](https://user-images.githubusercontent.com/79380914/200834753-d0f3eac0-14b7-4f52-9a8a-b8801fd50b20.png)
+
   ## Setup
   <img src="https://user-images.githubusercontent.com/79380914/200825583-429c980b-2c96-414d-9c85-016e471f2647.jpg" width="397" height="530" />
   
