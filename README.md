@@ -1,7 +1,8 @@
 # Introduction to Robotics
 Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Faculty of Mathematics and Computer Science, University of Bucharest. Each homework includes requirements, implementation details, code and image files.
-
-# Homework 1
+<details>
+<summary>RGB led with potentiometers</summary>
+<br>
   Use a separat potentiometer in controlling each of the color of the RGB led (*R*ed, *G*reen and *B*lue).  The control must be done with digital electronics (aka you must read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led.
   
 ## Setup
@@ -10,8 +11,9 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
 
 ## Video
   [Watch the video](https://youtu.be/uTKtmfkYtcI)
-  
-# Homework 2
+</details> 
+<details>
+<summary>Traffic  lights  for  a  crosswalk</summary>
   Building  the  traffic  lights  for  a  crosswalk.   
   Use 2 LEDs to represent the traffic lights for people (red and green) and 3 LEDs to represent the traffic lights for cars (red, yellow and green).
   
@@ -53,8 +55,10 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
    [Showing functionality](https://youtu.be/qx-ZBx0JzNs)
    
    [Showing what happens if the button is pressed in different states](https://youtu.be/tTEfWM5sgps)
+</details>
+<details>
+<summary>Draw on a 7-segment display</summary>
 
-# Homework 3
   Use the joystick to control the position ofthe segment and ”draw” on the display.  
   The movement between segments should be natural (meaning they should jump from the current position only to neighbors, but without passing through ”walls”.
   The system has the following states:
@@ -70,5 +74,22 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
   ## Video
   [Watch the video](https://youtu.be/n4lp0E6eDjI)
    
+</details>
+<details>
+<summary>Move through a 4 digit display</summary>
+Use the joystick to move through the 4 digit 7 segment displays digits, press the button to lock in on the current digit and use the other axis to increment or decrement the number.  
+Keep the button pressed to reset all the digit values and the current position to the first digit in the first state.
+The system has the following states:
 
-    
+  1.  First state: you can use a joystick axis to cycle through the 4 digits; using the other axis does nothing.  A blinking decimal point shows the current digit position.  When pressing the button, you lock in on the selected digit and enter the second state.
+  
+  2.  Second state: in this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle through the 4 digits. Instead,  using  the  other  axis, can  increment  or decrement  the  number  on  the  current  digit  IN  HEX  (aka  from  0 to F, as in the lab).  Pressing the button again returns you to the previous state.
+  
+  3.  Reset:  toggled by long pressing the button only in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
+  
+  ## Setup
+  <img src="https://user-images.githubusercontent.com/79380914/202043012-6ef68322-6f5a-4483-bfa1-ca08b170aaa9.jpeg" width="500" height="300" />
+  
+  ## Video
+  [Watch the video](https://www.youtube.com/watch?v=iYw0XJoFlxs)
+</details>
