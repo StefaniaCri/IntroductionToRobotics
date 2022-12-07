@@ -77,37 +77,47 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
 </details>
 <details>
 
-<summary>Menu for a 8x* matrix game</summary>
+<summary>Menu for a 8x8 matrix game</summary>
 <br>
 Create a menu for your game, emphasis on the game.  The player should scroll on the LCD with the joystick.    The menu should include the following functionality:
-1.  When powering up a game, a greeting message should be shown fora few moments.2.  Should contain roughly the following categories:(a)Start game, starts the initial level of your game [done]
+1.  When powering up a game, a greeting message should be shown fora few moments.2.  Should contain roughly the following categories:
+  <br>
+  (a)Start game, starts the initial level of your game [done]
+  <br>
 (b)Highscore: [not done, TO DO list]
-–Initially, we have 0.
-–Update  it  when  the  game  is  done.   
-Highest  possible  score should be achieved by starting at a higher level. 
-–Save the top 5+ values in EEPROM with name and score.
+–Initially, we have 0. <br>
+–Update  it  when  the  game  is  done. <br>   
+Highest  possible  score should be achieved by starting at a higher level. <br>
+–Save the top 5+ values in EEPROM with name and score. <br>
+<br>
+(c)Settings:<br>
 
-(c)Settings:
+–Enter name. The name should be shown in highscore. [Buggy right now]<br>
+–Starting  level:  Set  the  starting  level  value.   The  idea  is  to be able to start from a higher level as well.  Can be replaced with difficulty.<br>
+–LCD contrast control (optional, it replaces the potentiometer).  Save it to eeprom.<br>
+–LCD brightness control (mandatory, must change LED wirethat’s directly connected to 5v).Save it to eeprom.<br>
+[Both lcd contrast need an setup change => TO DO] <br>
 
-–Enter name. The name should be shown in highscore. [Buggy right now]
-–Starting  level:  Set  the  starting  level  value.   The  idea  is  to be able to start from a higher level as well.  Can be replaced with difficulty.
-–LCD contrast control (optional, it replaces the potentiometer).  Save it to eeprom.
-–LCD brightness control (mandatory, must change LED wirethat’s directly connected to 5v).  
-Save it to eeprom.
-[Both lcd contrast need an setup change => TO DO]
-–Matrix brightness control (see function setIntesnity from the ledControl library).  Save it to eeprom.
-–Sounds on or off.  
-Save it to eeprom.
+–Matrix brightness control (see function setIntesnity from the ledControl library).  Save it to eeprom.[done]<br>
+–Sounds on or off.Save it to eeprom.[done]  <br>
+  
 
-–Extra stuff can include items specific to the game mechanics,or other settings such as chosen theme song etc.  Again, saveit to eeprom.
+(d)About: should include details about the creator(s) of the game.At least game name, author and github link or user (use scrollingtext?)(e)How to play:short and informative description [done]
 
-(d)About: should include details about the creator(s) of the game.At least game name, author and github link or user (use scrollingtext?)(e)How to play:short and informative description
+3.While playing the game:display all relevant info
+  –Lives [done]
+  –Level [done]
+  –Score [done]
+  –Time? [partially done]
+  –Player name?–etc [todo]
 
-3.While playing the game:display all relevant info–Lives–Level–Score–Time?–Player name?–etc
-
-4.Upon game ending:(a)  Screen 1: a message such as ”Congratulations on reaching level/scoreX”.  ”You did better than y people.”.  etc.  Switches to screen 2upon interaction (button press) or after a few moments.(b)  Screen 2:  display relevant game info:  score, time, lives left etc.Must  inform  player  if  he/she  beat  the  highscore.Thismenu should only be closed by the player, pressing a button. [not yet implemented]
+4.Upon game ending:<br>
+  (a)  Screen 1: a message such as ”Congratulations on reaching level/scoreX”.  ”You did better than y people.”.  etc.<br>
+  Switches to screen 2upon interaction (button press) or after a few moments.<br>
+  (b)  Screen 2:  display relevant game info:  score, time, lives left etc.Must  inform  player  if  he/she  beat  the  highscore.<br>
+  This menu should only be closed by the player, pressing a button. [not yet implemented]
+  
   ## Setup
- 
   <img src="https://user-images.githubusercontent.com/79380914/206221101-3e52766d-0f9c-401c-8838-2542f8d69169.jpg" width="397" height="530" />
    A mess I know. Need to be improved.
   
