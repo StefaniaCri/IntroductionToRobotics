@@ -76,20 +76,44 @@ Introduction to Robotics laboratory homeworks, taken in the 3rd year at the Facu
    
 </details>
 <details>
-<summary>Move through a 4 digit display</summary>
-Use the joystick to move through the 4 digit 7 segment displays digits, press the button to lock in on the current digit and use the other axis to increment or decrement the number.  
-Keep the button pressed to reset all the digit values and the current position to the first digit in the first state.
-The system has the following states:
 
-  1.  First state: you can use a joystick axis to cycle through the 4 digits; using the other axis does nothing.  A blinking decimal point shows the current digit position.  When pressing the button, you lock in on the selected digit and enter the second state.
-  
-  2.  Second state: in this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle through the 4 digits. Instead,  using  the  other  axis, can  increment  or decrement  the  number  on  the  current  digit  IN  HEX  (aka  from  0 to F, as in the lab).  Pressing the button again returns you to the previous state.
-  
-  3.  Reset:  toggled by long pressing the button only in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
-  
+<summary>Menu for a 8x* matrix game</summary>
+<br>
+Create a menu for your game, emphasis on the game.  The player should scroll on the LCD with the joystick.    The menu should include the following functionality:
+1.  When powering up a game, a greeting message should be shown fora few moments.2.  Should contain roughly the following categories:(a)Start game, starts the initial level of your game [done]
+(b)Highscore: [not done, TO DO list]
+–Initially, we have 0.
+–Update  it  when  the  game  is  done.   
+Highest  possible  score should be achieved by starting at a higher level. 
+–Save the top 5+ values in EEPROM with name and score.
+
+(c)Settings:
+
+–Enter name. The name should be shown in highscore. [Buggy right now]
+–Starting  level:  Set  the  starting  level  value.   The  idea  is  to be able to start from a higher level as well.  Can be replaced with difficulty.
+–LCD contrast control (optional, it replaces the potentiometer).  Save it to eeprom.
+–LCD brightness control (mandatory, must change LED wirethat’s directly connected to 5v).  
+Save it to eeprom.
+[Both lcd contrast need an setup change => TO DO]
+–Matrix brightness control (see function setIntesnity from the ledControl library).  Save it to eeprom.
+–Sounds on or off.  
+Save it to eeprom.
+
+–Extra stuff can include items specific to the game mechanics,or other settings such as chosen theme song etc.  Again, saveit to eeprom.
+
+(d)About: should include details about the creator(s) of the game.At least game name, author and github link or user (use scrollingtext?)(e)How to play:short and informative description
+
+3.While playing the game:display all relevant info–Lives–Level–Score–Time?–Player name?–etc
+
+4.Upon game ending:(a)  Screen 1: a message such as ”Congratulations on reaching level/scoreX”.  ”You did better than y people.”.  etc.  Switches to screen 2upon interaction (button press) or after a few moments.(b)  Screen 2:  display relevant game info:  score, time, lives left etc.Must  inform  player  if  he/she  beat  the  highscore.Thismenu should only be closed by the player, pressing a button. [not yet implemented]
   ## Setup
-  <img src="https://user-images.githubusercontent.com/79380914/202043012-6ef68322-6f5a-4483-bfa1-ca08b170aaa9.jpeg" width="500" height="300" />
+ 
+  <img src="https://user-images.githubusercontent.com/79380914/206221101-3e52766d-0f9c-401c-8838-2542f8d69169.jpg" width="397" height="530" />
+   A mess I know. Need to be improved.
   
   ## Video
-  [Watch the video](https://www.youtube.com/watch?v=iYw0XJoFlxs)
+  [Watch the video](https://youtu.be/JZQMg5Ia4RE)
+
 </details>
+
+
